@@ -1,0 +1,207 @@
+body {
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+    background-color: #008080;
+    color: #000000;
+    margin: 0;
+    padding: 0;
+}
+
+
+/*Estilos de las "Ventanas"*/
+
+.container {
+    width: 800px;
+    margin: 50px auto;
+    background-color: #ffffff;
+    border: 10px solid #c0c0c0;
+    border-top-width: 30px; /* Hacer el borde superior más grueso */
+    padding: 20px;
+    box-shadow: 5px 5px 15px 5px rgba(0,0,0,0.75);
+    position: relative; /* Establecer la posición relativa para los botones */
+}
+
+.window-buttons {
+    position: absolute; 
+    top: -25px; 
+    right: 5px; 
+    display: flex;
+}
+
+.window-button {
+    width: 15px;
+    height: 15px;
+    border: 2px solid #000;
+    margin-right: 5px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+}
+.window-button:nth-child(1) {
+    background-color: yellow; 
+}
+
+.window-button:nth-child(2) {
+    background-color: cyan;
+}
+
+.window-button:nth-child(3) {
+    background-color: red;
+}
+
+h1 {
+    font-size: 2em;
+    color: #000080; 
+    text-align: center;
+}
+
+p {
+    font-size: 1em;
+    line-height: 1.5;
+}
+
+a {
+    color: #0000ff;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+button {
+    font-family: 'Courier New', Courier, monospace; /* Aplicar la fuente a los botones */
+    font-weight: bold; /* Hacer la fuente más gruesa */
+    background-color: #c0c0c0; /* Color de fondo gris */
+    color: #000000; /* Color del texto negro */
+    border: 2px solid #000000; /* Borde negro */
+    padding: 10px 10px;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background-color 0.3s ease; /* Transición suave al cambiar el color de fondo */
+}
+
+button:hover {
+    background-color: #ffffff; /* Color de fondo blanco al pasar el ratón */
+    color: #000000; /* Color del texto negro al pasar el ratón */
+    box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.75); /* Sombra al pasar el ratón */
+}
+
+
+/* Estilos para las alertas de SweetAlert2 */
+
+.swal2-actions .swal2-confirm,
+.swal2-actions .swal2-cancel {
+    font-family: 'Courier New', Courier, monospace; /* Aplicar la fuente a los botones de SweetAlert2 */
+    font-weight: bold; /* Hacer la fuente más gruesa */
+    background-color: #c0c0c0; /* Color de fondo gris */
+    color: #000000; /* Color del texto negro */
+    border: 1px solid #ff0000; /* Borde rojo */
+    padding: 10px 20px;
+    font-size: 1em;
+    cursor: pointer;
+    border-radius: 5px; /* Hacer los botones más cuadrados */
+}
+
+.swal2-actions .swal2-confirm:hover,
+.swal2-actions .swal2-cancel:hover {
+    background-color: #ffffff; /* Color de fondo blanco al pasar el ratón */
+    color: #000000; /* Color del texto negro al pasar el ratón */
+}
+
+
+/* Estilos para el contenedor de GIF*/
+
+.container-gifs {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Dos columnas de igual ancho */
+    grid-gap: 20px; /* Espacio entre las imágenes */
+}
+
+.grid-container img {
+    max-width: 100%;
+    height: auto;
+}
+
+
+/*Estilo de NavBar*/
+
+.navbar {
+    position: fixed;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    width: 150px;
+    background-color: #c0c0c0;
+    padding: 20px;
+    border: 2px solid #000;
+    box-shadow: 5px 5px 15px 5px rgba(0,0,0,0.75);
+    display: none;
+}
+
+.nav-links {
+    list-style-type: none;
+    padding: 0;
+}
+
+.nav-links li {
+    margin-bottom: 10px;
+}
+
+.nav-links li a {
+    display: block;
+    color: #000000;
+    text-decoration: none;
+    padding: 10px;
+}
+
+.nav-links li a:hover {
+    background-color: #555;
+}
+
+
+/* Estilo de Footer */
+.footer {
+    background-color: #c0c0c0; 
+    color: #000000; 
+    font-family: 'Arial', sans-serif; 
+    font-size: 12px; 
+    padding: 15px;
+    position: fixed; 
+    left: 0; 
+    bottom: 0;
+    width: 100%;
+    height: 20px; /* Tamaño fijo para el footer */
+    text-align: center;
+    border-top: 2px solid #000;
+    box-sizing: border-box; /* Incluir el padding en el tamaño total */
+}
+
+
+.footer .footerdiv {
+    display: inline-block; /* Alinear elementos en línea */
+    margin-top: -15px; /* Mover el botón hacia arriba */
+    display:flex
+}
+
+.footer.footer-button{
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+    background-color: #c0c0c0;
+    color: #000000;
+    border: 1px solid #000000;
+    padding: 1px 2px;
+    font-size: 0.8em;
+    cursor: pointer;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+.footer-button:hover {
+    background-color: #ffffff;
+    color: #000000; 
+    box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.75);
+}
